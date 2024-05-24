@@ -52,7 +52,9 @@ This repository contains Terraform configurations for setting up AWS infrastruct
 
 3. **Configure Workflow Environment Variables**: Update the environment variables in the `.github/workflows/deploy.yml` file according to your AWS setup.
 
-4. **Commit and Push Changes**: Commit and push the changes to trigger the deployment workflow.
+4. **Add Task Definition JSON File**: Create a file named `td.json` in the `.github/workflows/` directory and paste the contents of your task definition JSON. This JSON defines your ECS task configuration, including container definitions, CPU, memory, etc.
+
+5. **Commit and Push Changes**: Commit and push the changes to trigger the deployment workflow.
 
 ## Mechanism of Deployment Workflow
 
